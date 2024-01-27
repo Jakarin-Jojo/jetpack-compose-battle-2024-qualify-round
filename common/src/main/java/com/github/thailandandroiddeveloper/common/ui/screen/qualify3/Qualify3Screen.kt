@@ -3,21 +3,17 @@ package com.github.thailandandroiddeveloper.common.ui.screen.qualify3
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.MaterialTheme
@@ -25,7 +21,6 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
@@ -99,8 +94,8 @@ fun Qualify3Screen() {
                 )
             }
             Row(
-                modifier = Modifier.padding(vertical = 16.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally)
+                modifier = Modifier.padding(vertical = 16.dp).fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 OutlinedButton(
                     onClick = { },
@@ -109,7 +104,7 @@ fun Qualify3Screen() {
                         color = MaterialTheme.colorScheme.primary,
                     ),
                     shape = MaterialTheme.shapes.small,
-                    modifier = Modifier.size( height = 32.dp, width = 68.dp ),
+                    modifier = Modifier.size(height = 32.dp, width = 68.dp),
                     contentPadding = PaddingValues(0.dp)
                 ) {
                     Text(
@@ -121,7 +116,7 @@ fun Qualify3Screen() {
                 OutlinedButton(
                     onClick = {},
                     shape = MaterialTheme.shapes.small,
-                    modifier = Modifier.size( height = 32.dp, width = 68.dp ),
+                    modifier = Modifier.size(height = 32.dp, width = 68.dp),
                     contentPadding = PaddingValues(0.dp)
                 ) {
                     Text(
@@ -133,7 +128,7 @@ fun Qualify3Screen() {
                 OutlinedButton(
                     onClick = {},
                     shape = MaterialTheme.shapes.small,
-                    modifier = Modifier.size( height = 32.dp, width = 68.dp ),
+                    modifier = Modifier.size(height = 32.dp, width = 68.dp),
                     contentPadding = PaddingValues(0.dp)
                 ) {
                     Text(
@@ -145,7 +140,7 @@ fun Qualify3Screen() {
                 OutlinedButton(
                     onClick = {},
                     shape = MaterialTheme.shapes.small,
-                    modifier = Modifier.size( height = 32.dp, width = 68.dp ),
+                    modifier = Modifier.size(height = 32.dp, width = 68.dp),
                     contentPadding = PaddingValues(0.dp)
                 ) {
                     Text(

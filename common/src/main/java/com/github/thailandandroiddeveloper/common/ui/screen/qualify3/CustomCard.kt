@@ -32,7 +32,7 @@ fun CardBackground(
 ) {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.background,
+            containerColor = MaterialTheme.colorScheme.surface,
         ),
         shape = MaterialTheme.shapes.large,
         border = BorderStroke(
